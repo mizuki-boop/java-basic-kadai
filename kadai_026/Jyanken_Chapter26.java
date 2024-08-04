@@ -53,7 +53,9 @@ System.out.println("自分の手は" +rspMap.get(me)+",対戦相手の手は" + 
 //equals()メソッドで自分と対戦相手のじゃんけんの手を比較する	      
 	      if(me.equals(you)) {
 	         System.out.println("あいこです");
-	      } else if(me=="グー"&&you=="チョキ"||me=="チョキ"&&you=="パー"||me=="パー"&&you=="グー"){
+	      } else if((me.equals("r")&&you.equals("s"))||
+	    		  	(me.equals("s")&&you.equals("p"))||
+	    		  	(me.equals("p")&&you.equals("r"))){
 	    	  System.out.println("自分の勝ちです");
 	      } else{
 	    	  System.out.println("自分の負けです");
